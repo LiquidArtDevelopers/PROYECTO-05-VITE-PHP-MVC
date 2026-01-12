@@ -3,16 +3,16 @@
 @use 'artForm';
 
 header{
-    background-image: url('../img/vistas/quienes-somos/quienes-somos-1500.avif');
+    background-image: url('/assets/img/vistas/quienes-somos/quienes-somos-1500.avif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     @media only screen and (min-width:c.$tablet){
-        background-image: url('../img/vistas/quienes-somos/quienes-somos-1800.avif');
+        background-image: url('/assets/img/vistas/quienes-somos/quienes-somos-1800.avif');
     }
     @media only screen and (min-width:c.$desktop){
-        background-image: url('../img/vistas/quienes-somos/quienes-somos-2560.avif');
+        background-image: url('/assets/img/vistas/quienes-somos/quienes-somos-2560.avif');
     } 
     >:nth-child(2){
         width: 150px;
