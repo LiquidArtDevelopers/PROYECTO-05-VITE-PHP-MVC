@@ -55,7 +55,7 @@
                 <h3>Formulario de contacto</h3>
 
                 <!-- Al abrir este otro archivo, genero otro scope, se reseta y limpia la memoria en el servidor -->
-                <form action="<?=$_ENV['RUTA']?>/app/gestionForm.php" method="post">
+                <form action="/app/gestionForm.php" method="post">
 
                     <?php
                     if( isset($_GET['campo']) ){
