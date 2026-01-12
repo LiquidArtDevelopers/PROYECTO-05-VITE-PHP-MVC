@@ -7,7 +7,7 @@
     <meta name="description" content="Descubre la historia de nuestra panadería en Aginaga y conoce al equipo de obradores artesanos. Maestros panaderos comprometidos con la masa madre y la tradición local. Servicio a Usurbil y Orio con pasión por la calidad y kilómetro cero.">
     
     <!-- linko el css que le corresponde a esta vista -->
-    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/gracias.min.css">
+    <?php echo vite_tags('assets/scss/gracias.scss'); ?>
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?>/es/gracias">

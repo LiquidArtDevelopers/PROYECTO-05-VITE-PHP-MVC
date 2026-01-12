@@ -49,7 +49,7 @@ if (isset($_SESSION['LOGIN']) && $_SESSION['LOGIN'] === "1") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zona Admin</title>
     <meta name="description" content="120 y 320 caracteres">
-    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/zonaAdmin.min.css">
+    <?php echo vite_tags('assets/scss/zonaAdmin.scss'); ?>
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?>/es/zona-admin">
