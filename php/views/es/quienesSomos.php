@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nosotros | Panadería Aginaga - Tradición desde 1925</title>
     <meta name="description" content="Conoce al equipo de profesionales de Panadería Aginaga. Casi un siglo de tradición panadera en el corazón de Aginaga, elaborando productos artesanales de la mejor calidad.">
-    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/quienesSomos.min.css">
+    <?php echo vite_tags('assets/js/views/quienesSomos.js'); ?>
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?>/es/sobre-nosotros">
