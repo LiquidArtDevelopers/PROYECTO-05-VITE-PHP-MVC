@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panadería Aginaga | Obrador de pan y pastelería artesanal</title>
     <meta name="description" content="Panadería y pastelería artesanal en Aginaga desde 1925. Conoce a nuestro equipo, descubre nuestros productos y disfruta de un trato cercano en cada visita.">
-    <?php echo vite_tags('assets/scss/inicio.scss'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/inicio.min.css">
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?>/es">

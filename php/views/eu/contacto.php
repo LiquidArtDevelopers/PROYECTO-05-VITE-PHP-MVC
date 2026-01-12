@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarri gurekin harremanetan</title>
     <meta name="description" content="Aginagako gure okindegiko harremanetarako orria">
-    <?php echo vite_tags('assets/scss/contacto.scss'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/contacto.min.css">
 
 
 
@@ -136,4 +136,4 @@
 
 </html>
 
-<?php echo vite_tags('assets/js/contacto.js'); ?>
+<script src="<?=$_ENV['RUTA']?>/assets/js/contacto.js"></script>
