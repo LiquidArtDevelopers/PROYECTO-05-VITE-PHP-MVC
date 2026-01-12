@@ -6,16 +6,16 @@ import { resolve } from 'node:path';
 // En Vite vanilla, cada vista carga un JS que a su vez importa el SCSS.
 // Así, en dev se sirve el CSS vía JS y en build se genera el CSS y se enlaza.
 const entrypoints = [
-  'src/js/views/404.js',
-  'src/js/views/contacto.js',
-  'src/js/views/gracias.js',
-  'src/js/views/inicio.js',
-  'src/js/views/producto.js',
-  'src/js/views/productos.js',
-  'src/js/views/quienesSomos.js',
-  'src/js/views/terminos.js',
-  'src/js/views/templates.js',
-  'src/js/views/zonaAdmin.js',
+  'assets/js/views/404.js',
+  'assets/js/views/contacto.js',
+  'assets/js/views/gracias.js',
+  'assets/js/views/inicio.js',
+  'assets/js/views/producto.js',
+  'assets/js/views/productos.js',
+  'assets/js/views/quienesSomos.js',
+  'assets/js/views/terminos.js',
+  'assets/js/views/templates.js',
+  'assets/js/views/zonaAdmin.js',
 ];
 
 export default defineConfig(({ command }) => {
@@ -24,10 +24,10 @@ export default defineConfig(({ command }) => {
 
   return {
     // En dev usamos base "/" para que los módulos se sirvan desde la raíz.
-    // En build apuntamos a "/assets/" porque allí se publican los bundles.
-    base: isDev ? '/' : '/assets/',
+    // En build apuntamos a "/assets/dist/" porque allí se publican los bundles.
+    base: isDev ? '/' : '/assets/dist/',
     // Forzamos recarga completa cuando cambian archivos PHP (no hay HMR en PHP).
-    plugins: [fullReload(['App/**/*.php'])],
+    plugins: [fullReload(['php/**/*.php'])],
     server: {
       // "host: true" permite acceder desde la red local (útil en móviles).
       host: true,
@@ -40,11 +40,9 @@ export default defineConfig(({ command }) => {
       // Generamos manifest para que PHP pueda saber los nombres finales de los assets.
       manifest: true,
       // Carpeta de salida del build.
-      outDir: 'public/assets',
+      outDir: 'assets/dist',
       // Limpiamos la carpeta antes de cada build.
       emptyOutDir: true,
-      // Dejamos los assets en la raíz del outDir para controlar las carpetas finales.
-      assetsDir: '',
       rollupOptions: {
         // Convertimos la lista de entradas en un objeto compatible con Rollup.
         // Cada key es el path lógico y el value es la ruta absoluta del archivo.
@@ -52,23 +50,6 @@ export default defineConfig(({ command }) => {
           entries[entry] = resolve(__dirname, entry);
           return entries;
         }, {}),
-        output: {
-          entryFileNames: 'js/[name]-[hash].js',
-          chunkFileNames: 'js/[name]-[hash].js',
-          assetFileNames: (assetInfo) => {
-            const ext = assetInfo.name ? assetInfo.name.split('.').pop() : '';
-            if (ext === 'css') {
-              return 'css/[name]-[hash][extname]';
-            }
-            if (['png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'avif'].includes(ext)) {
-              return 'img/[name]-[hash][extname]';
-            }
-            if (['woff', 'woff2', 'ttf', 'otf', 'eot'].includes(ext)) {
-              return 'fonts/[name]-[hash][extname]';
-            }
-            return '[name]-[hash][extname]';
-          },
-        },
       },
     },
   };
