@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 3 Recursos HTML y SCSS</title>
-    <?php echo vite_tags('assets/js/views/templates.js'); ?>
+    <link rel="stylesheet" href="/assets/css/templates.min.css">
 </head>
 <body>
     <!-- NAV -->

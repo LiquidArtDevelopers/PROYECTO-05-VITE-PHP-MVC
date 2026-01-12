@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pribatutasun eta cookie kudeaketaren baldintzak</title>
-    <?php echo vite_tags('assets/js/views/terminos.js'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/terminos.min.css">
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?>/eu/lege-baldintzak">

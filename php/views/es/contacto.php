@@ -7,7 +7,7 @@
     <meta name="description" content="Página de contacto de nuestra panadería en Aginaga">
 
     <!-- ASIGNACIÓN DE ARCHIVO CSS (MINIFICADO) A ESTE HTML -->
-    <?php echo vite_tags('assets/js/views/contacto.js'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/contacto.min.css">
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?>/es/contacto">
@@ -134,3 +134,5 @@
 
 
 </html>
+
+<script src="<?=$_ENV['RUTA']?>/assets/js/contacto.js"></script>
