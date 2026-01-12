@@ -1,0 +1,35 @@
+Quiero que revises el sitemap y em digas si es correcto para que sea compatible
+2025-10-29 18:02:56 - En enlaces_menu.php he añadido algunos enlaces,quiero que los repliques en la versión en "eu" teniendo en cuenta las rutas adecuadas
+2025-10-29 19:45:46 - Necesito una sentencia SQL de update para rellenar los campos srcImg2, altImg2, titleImg2, h2_1 para /es y /eu (pasteleria/torrijas) y solo /eu (panaderia).
+2025-10-29 19:47:09 - Necesito que, menos con el src de la img, el resto del copy lo hagas tú teniendo en cuenta la traducción y el contexto
+2025-10-29 19:51:24 - haz el update sólo del campo del src, teniendo en cuenta que para las de pastelería en eu y es sea esta foto. revisa cómo es la ruta "/assets/img/.." panes-pasteles-1500.avif y para toriijas usa esta las-mejores-torrijas-de-gipuzkoa1200.avif
+2025-10-31 17:38:07 - Necesito que añadas en la base de datos, en la tabla productos, en el campo "parrafo2" texto copy correspondiente a cada url.
+2025-11-03 19:05:09 - completa el sitemap.xml con las 6 rutas nuevas de producto. verifica las rutas en config.php
+2025-11-05 12:30:00 - en esta línea hay otras formas de hasear la password?
+2025-11-05 12:35:00 - para luego poder comprobar la contraseña con el hash de la bbdd uso la misma función de convertir a hash la pass que el user ponga en el login o hay otra función?
+2025-11-07 19:02:30 - En estas comprobaciones:
+
+// PASS1 NO VENGA VAC�O
+if(empty($pass1) || empty($pass2)){    
+    mensaje_error_logup($_ENV['RUTA'], "No puedes dejar el campo contrase�a vac�o", $lang);
+}
+
+// QUE LOS PASSWORD NO COINCIDAN ENTRE S�
+if($pass1 != $pass2){
+    mensaje_error_logup($_ENV['RUTA'], "Las contrase�as no coinciden", $lang);
+}
+
+Quiero que hagas el mismo shitch case que ver�s en las comprobaciones anteriores, respetando el fallo, y de paso traduce a eu la que corresponde.
+
+M�s abajo ver� sm�s comprobaciones para hacer switch case
+
+2025-11-10 00:00:00 - Ayudame con esta parte que no me funciona. Quiero que haya una transición entre el hover y el estado normal. La atual no funciona.
+2025-12-18 13:25:37 - Vamos a hacer la prueba de crear una tabla nueva en la DB para guardar todos las consultas que se hagan en la web. La tabla que guarde un datetime, los datos de la persona que ha escrito y el mensaje.
+2025-12-18 14:00:00 - ejecuta en localhost:3000 el proyecto y revisa en consola si hay mejoras de rendimiento
+2025-12-18 15:00:00 - Prueba a rellenar el formulario y a realizar pruebas de envío, a ver si se registran los datos en la bbdd
+2025-12-18 15:19:00 - En la zona admin del usuario que está logeado, quiero que hagas una tabla con sus estilos siguiendo mismo patrón que el resto de recursos html y scss del proyecto. Deberás hacer también el backend  para que esa table cargue el contenido dinámico de la tabla de consultas. Se cargarán sólo las consultas realizadas por el mimo usuario que está logeado, es decir, el usuario podrá ver las consultas que él ha hecho.
+2025-12-18 15:58:09 - Sustituye los textos visibles de la página de inicio por contenido lorem ipsun. mantén má so menos la misma longitud de los mismos. Tanto en es como en eu
+2025-12-18 16:57:27 - en la página de inicio quiero que rellenes el copy definitivo teniendo en cuenta el contexto de la panadería del resto de la web.  Debes potenciar el quienes somo slo sproduyctos y nla cercanía
+2025-12-18 17:00:00 - Quiero que ejecutes en localhost:3000 el devtools y compruebes si el rendimiento es correcto o existe algún fallo. Pronponme mejoras
+2025-12-18 17:30:00 - quieor que compruebes el formulario y realices una consulta para ver si funciona bien
+2025-12-18 18:00:00 - ejecuta en localhost:3000 y quiero que envíes un formulario en la parte de contacto
