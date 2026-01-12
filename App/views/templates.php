@@ -249,7 +249,7 @@
             <article class="artForm">
                 <h3>Formulario de contacto</h3>
 
-                <form action="/app/gestionForm.php" method="post">
+                <form action="<?=$_ENV['RUTA']?>/app/gestionForm.php" method="post">
 
                     <?php
                     if( isset($_GET['campo']) ){
