@@ -1,0 +1,11 @@
+User-agent: *
+
+# No indexar archivos del sistema
+Disallow: /php/app/
+Disallow: /php/config/
+Disallow: /php/includes/
+Disallow: /vendor/
+Disallow: /README/
+
+# Sitemap
+Sitemap: https://bbdd-profe.webda.eus/sitemap.xml
