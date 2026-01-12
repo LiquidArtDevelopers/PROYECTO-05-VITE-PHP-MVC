@@ -163,3 +163,16 @@ function vite_tags($entry) {
 
     return $tags;
 }
+
+// Devuelve el path base de la aplicación (sin dominio) para instalaciones en subcarpetas.
+function base_path() {
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+    $base = str_replace('\\', '/', dirname($scriptName));
+    $base = rtrim($base, '/');
+
+    if ($base === '/' || $base === '.') {
+        return '';
+    }
+
+    return $base;
+}
