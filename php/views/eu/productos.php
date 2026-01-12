@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gure okindegiko produktuak</title>
     <meta name="description" content="">
-    <?php echo vite_tags('assets/scss/productos.scss'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/productos.min.css">
 
 
 

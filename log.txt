@@ -33,5 +33,3 @@ M�s abajo ver� sm�s comprobaciones para hacer switch case
 2025-12-18 17:00:00 - Quiero que ejecutes en localhost:3000 el devtools y compruebes si el rendimiento es correcto o existe algún fallo. Pronponme mejoras
 2025-12-18 17:30:00 - quieor que compruebes el formulario y realices una consulta para ver si funciona bien
 2025-12-18 18:00:00 - ejecuta en localhost:3000 y quiero que envíes un formulario en la parte de contacto
-2026-01-12 10:05:27 - Quiero que estudies bien el flujo de este stack mvc. La intenciónes es poder usar vite como emquetador y que el flujo de trabajo funcione igual.  Tendrás que quitar los archivos css e instalar sass también, y hacer la vinculación adecuada para que dev funcione, y cuando se haga build estén bien vinculados. Cada vista tiene su propio css como podrás ver.  También quiero que lo co figures para que cuando se modifique php se refresque en caliente el navegador. Y que cuando hagamos "npm run start", se ejecute tanto el "npm run dev" como php -S localhost:3000.
-2026-01-12 10:17:24 - Quiero que hagas comentarios didácticos en el vite.config para que los pueda usar en clase. Este proyecto es una parte de la formación.

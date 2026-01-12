@@ -58,7 +58,7 @@ mysqli_close($con); //cerrando la conexión a la BBDD
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$title?></title>
     <meta name="description" content="<?=$description?>">
-    <?php echo vite_tags('assets/scss/producto.scss'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/producto.min.css">
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA'].'/'.$url?>">
