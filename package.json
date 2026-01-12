@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "concurrently -k -n vite,php -c blue,green \"npm run dev\" \"php -S localhost:3000\""
+    "start": "concurrently -k -n vite,php -c blue,green \"npm run dev\" \"php -S localhost:3000 -t public\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
