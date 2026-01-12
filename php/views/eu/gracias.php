@@ -8,7 +8,7 @@
     <meta name="description" content="Ezagutu gure Aginagako okindegiaren historia eta gure artisau langileen taldea. Ama orearekin eta tokiko tradizioarekin konprometitutako okin maisuak. Usurbil eta Orioko zerbitzua kalitatearekin eta zero kilometroarekin konprometituta.">
         
     <!-- linko el css que le corresponde a esta vista -->
-    <?php echo vite_tags('assets/js/views/gracias.js'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/gracias.min.css">
 
 
 

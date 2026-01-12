@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aginagako Okindegia | Kalitate handiko gozotegi lantegia</title>
     <meta name="description" content="120 eta 320 karaktere">
-    <?php echo vite_tags('assets/js/views/inicio.js'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/inicio.min.css">
 
 
 

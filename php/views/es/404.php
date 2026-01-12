@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Página no encontrada</title>
     <meta name="description" content="Página no encontrada. Error 404">
-    <?php echo vite_tags('assets/js/views/404.js'); ?>
+    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/404.min.css">
 
     <!-- Indexación y autoridad-->
     <meta name="robots" data-lang="robots" content="nofollow, noindex">
