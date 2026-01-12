@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guri buruz | Okindegia Aginaga - Tradizioa 1925etik</title>
     <meta name="description" content="Ezagutu Okindegia Aginagako profesionalen taldea. Ia mende bateko tradizioa Aginagan, artisau produktuak kalitate handienarekin prestatzen.">
-    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/quienesSomos.min.css">
+    <?php echo vite_tags('assets/js/views/quienesSomos.js'); ?>
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?>/eu/sobre-nosotros">
