@@ -39,7 +39,7 @@
 
         
         <article class="artForm">
-            <form action="<?=$_ENV['RUTA']?>/app/gestionFormLogup.php" method="post">
+            <form action="/app/gestionFormLogup.php" method="post">
 
                 <?php
                 if( isset($_GET['error']) ){

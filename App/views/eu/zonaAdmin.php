@@ -94,7 +94,7 @@ if (isset($_SESSION['LOGIN']) && $_SESSION['LOGIN'] === "1") {
             // MOSTRARÉ EL FORMULARIO DE LOGEO
         ?>
             <article class="artForm">
-                <form action="<?=$_ENV['RUTA']?>/app/gestionFormLogin.php" method="post">
+                <form action="/app/gestionFormLogin.php" method="post">
 
                     <?php
                     if( isset($_GET['error']) ){
