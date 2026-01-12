@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Orria ez da aurkitu</title>
     <meta name="description" content="Orria ez da aurkitu. 404 errorea">
-    <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/404.min.css">
+    <?php echo vite_tags('assets/js/views/404.js'); ?>
 
     <!-- Indexación y autoridad-->
     <meta name="robots" data-lang="robots" content="nofollow, noindex">
