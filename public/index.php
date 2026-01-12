@@ -34,6 +34,12 @@ $request = urldecode($_SERVER["REQUEST_URI"]) ?? '/'.$_ENV['LANG_DEFAULT'];
 // ejemplo: "/es/contacto"
 $url = parse_url($request, PHP_URL_PATH) ?? '/'.$_ENV['LANG_DEFAULT'];
 
+// Ajustamos si la app está instalada en una subcarpeta (ej: /public).
+$basePath = base_path();
+if ($basePath !== '' && str_starts_with($url, $basePath . '/')) {
+    $url = substr($url, strlen($basePath));
+}
+
 if (str_starts_with($url, '/app/')) {
     $appFile = realpath($appRoot . $url);
     $appBase = realpath($appRoot . '/app');
