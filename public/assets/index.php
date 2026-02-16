@@ -34,12 +34,13 @@ $request = urldecode($_SERVER["REQUEST_URI"]) ?? '/'.$_ENV['LANG_DEFAULT'];
 // ejemplo: "/es/contacto"
 $url = parse_url($request, PHP_URL_PATH) ?? '/'.$_ENV['LANG_DEFAULT'];
 
-if (str_starts_with($url, '/app/')) {
-    $appFile = realpath($appRoot . $url);
-    $appBase = realpath($appRoot . '/app');
+$method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
-    if ($appFile && $appBase && str_starts_with($appFile, $appBase)) {
-        require_once $appFile;
+// Rutas POST para formularios
+if ($method === 'POST') {
+    if (isset($arrayRutasPost[$url])) {
+        $view = $arrayRutasPost[$url]['view'];
+        require_once $appRoot . $view;
         exit;
     }
 

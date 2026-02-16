@@ -61,7 +61,7 @@
             <article class="artForm">
                 <h3>Harremanetarako formularioa</h3>
 
-                <form action="<?=base_path()?>/app/gestionForm.php" method="post">
+                <form action="<?=base_path()?>/app/gestionForm" method="post">
 
                     <?php
                     if( isset($_GET['campo']) ){

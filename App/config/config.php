@@ -88,4 +88,16 @@ $arrayRutasGet = [
     ]
 ];
 
+// Array de rutas permitidas para peticiones POST (formularios)
+$arrayRutasPost = [
+    '/app/gestionForm' => [
+        'view' => '/app/gestionForm.php',
+    ],
+    '/app/gestionFormLogin' => [
+        'view' => '/app/gestionFormLogin.php',
+    ],
+    '/app/gestionFormLogup' => [
+        'view' => '/app/gestionFormLogup.php',
+    ],
+];
 

@@ -45,3 +45,13 @@ Mï¿½s abajo verï¿½ smï¿½s comprobaciones para hacer switch case
 2026-01-12 14:59:01 - NO estÃ¡ bien. No puedes usar la ruta de la variable de entorno, ya que el backend. Debes usar una absoluta que se dirija a la carpeta App. Estilo : ../App/app/gestionForm.php (no funciona la que te he puesto, revÃ­salo)
 2026-01-12 15:03:31 - al poner esa ruta sigue saliendo el fallo de no encontrar el archivo: The requested resource /App/app/gestionForm.php was not found on this server.
 2026-01-12 15:17:21 - NO has cambiado nada. AÃºn sigue el mismo fallo.
+2026-02-16 13:40:19 - quiero que revises este proyecto MVC con DDD para ver si vite respeta todo el flujo teniendo en cuenta las .env existentes y me des tu veredicto. debe poderse trabajar en dev y el build debe poder compilar bien todos los recursos. Vamos a analizarlo y me dastus conclusiones
+2026-02-16 14:49:41 - cON QUÉ COMANDOS LEVANTO EN LOCAL?
+2026-02-16 14:50:36 - normalmente trabajo en el puerto 3000 en localhost. El start ya lo levanta?
+2026-02-16 14:54:22 - tenemos que solucionar el tema de poder llamar a archivos php backend y que vite los ejecute bien
+2026-02-16 15:03:09 - el action del form usa  action="<?=base_path()?>/app/gestionForm.php"  que es la variable env bien de dev o bien de producción
+2026-02-16 15:06:47 - revísalo bien, que seguimos sin poder ejecutar el action del form
+2026-02-16 15:11:10 - sigue sin funcionar. me marca en el navegador http://localhost:3000/app/gestionForm.php y debería poder ejecutar en servidor ese archivo
+2026-02-16 15:14:10 - ahora funciona, dime, de TODOS los cambios que has hecho en esta sesión cuales son los efectivos y cuales no han servido
+2026-02-16 15:14:45 - rehaz los cambios que no han funcionado plara evitar ruido en el código
+2026-02-16 15:18:49 - no me parece que la solución que has hecho está bien.creo que lo ideal es que hagamos en config.php lo mimsmo que hemos hecho con las rutas get, donde demos de alta las rutas post necesarias. Y así nos evitamos el montar una carpeta app en public.

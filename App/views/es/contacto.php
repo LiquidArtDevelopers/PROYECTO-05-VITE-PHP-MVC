@@ -31,7 +31,7 @@
 
 
     <!-- NAV -->
-    <?php include $appRoot . '/includes/es/nav.php' ?>
+    <?php include $appRoot . '/includes/es/nav.php' ?> 
 
     <!-- HERO01 -->
     <header>
@@ -55,7 +55,7 @@
                 <h3>Formulario de contacto</h3>
 
                 <!-- Al abrir este otro archivo, genero otro scope, se reseta y limpia la memoria en el servidor -->
-                <form action="<?=base_path()?>/app/gestionForm.php" method="post">
+                <form action="<?=base_path()?>/app/gestionForm" method="post">
 
                     <?php
                     if( isset($_GET['campo']) ){
