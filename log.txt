@@ -1,1 +1,0 @@
-2026-02-16 15:32:12 - este proyecto se sube a producción en la raiz con app y vendor, y dentro de www lo que esté dentro de public, index incluido. No se debe borrar. otra cosa es que cuando hagamos build se desmonte algo. Qué opinas
