@@ -1,0 +1,3 @@
+2026-02-18 18:45:26 - recuérdame si en este proyecto tenemos el npm run start para levantarlo tanto en php en localhost:3000 como en npm run dev
+2026-02-18 18:46:54 - lo levanta en el puerto 3000 de localhost?
+2026-02-18 18:47:46 - Limpia el readme y añade esta lógica de comienzo para el dev
