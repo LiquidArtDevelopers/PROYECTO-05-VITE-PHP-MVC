@@ -1,3 +1,24 @@
 2026-02-18 18:45:26 - recuérdame si en este proyecto tenemos el npm run start para levantarlo tanto en php en localhost:3000 como en npm run dev
 2026-02-18 18:46:54 - lo levanta en el puerto 3000 de localhost?
 2026-02-18 18:47:46 - Limpia el readme y añade esta lógica de comienzo para el dev
+2026-02-20 17:03:39 - explica de forma didáctica para qué sirve el router.php de este proyecto. y el flujo desde que un usuario pone una url sobre nuestro dominio.
+2026-02-23 17:20:12 - fíjate en config.php como he añadido una clave valor más al array. Debes hacer lo mismo con el resto, donde el valor de content será el mimo nombre de la vista.
+2026-02-23 17:21:47 - AHORA FÍJATE EN LA CARPETA DE LANGUAGES y crea dentro una carpeta por cada uno de los content de config.php. dentro de cada una de las subcarpetas crea un es.json y un eu.json
+2026-02-23 17:58:20 - revisa el enrutamiento que hago desde el index para coger el json del idioma correspondiente y hacer el explode de data y usar dichas variables php. Hay algo que no funciona- Sólo detéctalo y dímelo
+2026-02-23 18:00:38 - de qué se me ha colado el index.php en assets?
+2026-02-23 18:02:08 - si hago build se borra ese index por el nuevo?
+2026-02-23 18:04:44 - podría borrar todo lo de assets? en teoría no debería de generarse dentro de assets. QUé estructura se genera al hacer build?
+2026-02-23 18:36:59 - del config.php vamos a cambiar las ruta sd ela svistas. /views/es/inicio.php pasaría a /views/inicio.php y así todas incluso las de eu
+2026-02-23 18:40:30 - Así como he variabilizado el h1, para poder coger el valro desde un json de idiomas, necesito vawriabilizar tgodos los textos visibles a viariables php, y después necesito que dentro de el json es.json de la carpeta inicio de languages me generes dichas claves y los valores actuales de la vista.
+2026-02-23 18:46:28 - Traduce ahorfa al eu.json. mismas claves.
+2026-02-23 19:00:56 - para configurasr en este proyecto el mcp de devtools con codex. quéarchivo y qué debía poner.
+2026-02-23 19:03:34 - sería dentro de una carpeta en la raiz que se llame .condex? y dentro el config.toml?
+2026-02-23 19:05:38 - prueba a conectarte al devtools de la pestaña que ya está abierta de localhost y busca problemas que pueda haber para el rendimiento
+2026-02-23 19:06:57 - está en localhost:3000, intenta conectarte al devtools
+2026-02-23 19:08:13 - revisa el config.toml para ver si está bien de cara a la conexión de codex con el mcp de devtools
+2026-02-23 19:10:30 - prueba ahora
+2026-02-23 19:13:12 - prueba ahora.
+2026-02-23 19:14:46 - prueba
+2026-02-23 19:21:39 - en oficina uso el navegador en localhost:3000 y tengo la config de toml que he puesto ahora. revísalo a ver si puedes. También he dado permiso en goggle al remote debuging
+2026-02-23 19:23:39 - probamos a ver. conéctate al devtools del navegador activo
+2026-02-23 19:27:04 - Haz el autoconect, pero con esta config del toml debe poder funcionar

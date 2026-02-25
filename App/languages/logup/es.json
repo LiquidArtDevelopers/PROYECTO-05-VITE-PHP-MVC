@@ -1,0 +1,18 @@
+{
+    "seo_title": "Registro",
+    "seo_description": "120 y 320 caracteres",
+    "link_canonical": "/es/registro",
+    "hero_h1": "Registro",
+    "label_nombre": "Nombre *",
+    "placeholder_nombre": "* Escribe tu nombre",
+    "label_correo": "Correo *",
+    "placeholder_correo": "* Escribe tu correo",
+    "label_password": "Contraseña *",
+    "placeholder_password": "Contraseña",
+    "label_password_repeat": "Repetir contraseña *",
+    "placeholder_password_repeat": "Repetir contraseña",
+    "label_aceptar_terminos": "Aceptar",
+    "label_aceptar_terminos_enlace": "términos y condiciones de privacidad",
+    "submit_enviar": "ENVIAR",
+    "campos_obligatorios": "* Campos obligatorios"
+}

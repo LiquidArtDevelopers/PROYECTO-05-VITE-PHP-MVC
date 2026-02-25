@@ -1,0 +1,18 @@
+{
+    "seo_title": "Erregistroa",
+    "seo_description": "120 eta 320 karaktere",
+    "link_canonical": "/eu/erregistroa",
+    "hero_h1": "Erregistroa",
+    "label_nombre": "Izena *",
+    "placeholder_nombre": "* Idatzi zure izena",
+    "label_correo": "Posta elektronikoa *",
+    "placeholder_correo": "* Idatzi zure posta elektronikoa",
+    "label_password": "Pasahitza *",
+    "placeholder_password": "Pasahitza",
+    "label_password_repeat": "Errepikatu pasahitza *",
+    "placeholder_password_repeat": "Errepikatu pasahitza",
+    "label_aceptar_terminos": "Onartu",
+    "label_aceptar_terminos_enlace": "pribatutasuneko terminoak eta baldintzak",
+    "submit_enviar": "BIDALI",
+    "campos_obligatorios": "* Nahitaezko eremuak"
+}

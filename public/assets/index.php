@@ -29,7 +29,6 @@ require_once $appRoot . "/config/config.php";
 $request = urldecode($_SERVER["REQUEST_URI"]) ?? '/'.$_ENV['LANG_DEFAULT']; 
 
 
-
 // Extraemos únicamente el path para ignorar los parámetros de consulta
 // ejemplo: "/es/contacto"
 $url = parse_url($request, PHP_URL_PATH) ?? '/'.$_ENV['LANG_DEFAULT'];
@@ -98,8 +97,8 @@ if (isset($arrayRutasGet[$lang][$url])) {
 
     // Si la url existe dentro del array de url's, entonces cogemos el valor de view, que es el archivo que haremos include para cargar el contenido pertienente de esta url.
     $view = $arrayRutasGet[$lang][$url]['view']; 
-     
-    
+   
+
     //----VISTA----------
     require_once $appRoot . $view;
 

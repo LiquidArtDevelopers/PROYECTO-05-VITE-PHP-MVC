@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- NAV -->
-    <?php include $appRoot . '/includes/es/nav.php' ?>
+    <?php include $appRoot . '/includes/nav.php' ?>
 
 
     <!-- HERO01 -->
@@ -245,6 +245,36 @@
                 </div>     
             </article>
 
+            <!-- artículo 07 -->
+            <article class="art07">
+                <h3>(h3) Nuestra panadería</h3>
+
+                <img
+                srcset="
+                https://dummyimage.com/900x900 900w,
+                https://dummyimage.com/1800x1100 1800w,
+                https://dummyimage.com/2560x1200 2560w
+                "
+                sizes="
+                (width <= 900px) 800px,
+                (width <= 1500px) 1200px,
+                2560px
+                "
+                src="https://dummyimage.com/900x900"
+                width="900"
+                alt="" 
+                title="">
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptatum natus ea veritatis harum qui eaque atque exercitationem laudantium? Inventore illum explicabo vero error laborum beatae atque eligendi fugit possimus repudiandae, dolor cupiditate itaque tempore! Et maxime, laboriosam consectetur, similique sunt corporis eum eveniet officia rerum ducimus molestias dolorum libero.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur necessitatibus optio inventore esse ipsum ad eveniet sequi iusto distinctio enim assumenda nostrum explicabo facere quo numquam, quod eius hic.</p>
+
+                <a href="" class="boton">CTA</a>
+
+            </article>
+
+            
+
             <!-- artForm -->
             <article class="artForm">
                 <h3>Formulario de contacto</h3>
@@ -302,6 +332,8 @@
     </main>
 
     <!-- FOOTER -->
-    <?php include $appRoot . '/includes/es/footer.php'?>
+    <?php include $appRoot . '/includes/footer.php'?>
 </body>
 </html>
+
+

@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "concurrently -k -n vite,php -c blue,green \"npm run dev\" \"php -S localhost:3000 -t public public/router.php\""
+    "lad": "concurrently -k -n vite,php -c blue,green \"npm run dev\" \"php -S localhost:3000 -t public public/router.php\"",
+    "loquesea": "dsadasd"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
