@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $seo_title ?></title>
     <meta name="description" content="<?= $seo_description ?>">
-    <?php echo vite_tags('src/js/views/zonaAdmin.js'); ?>
+    <?php echo vite_tags('src/js/zonaAdmin.js'); ?>
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?><?= $link_canonical ?>">
@@ -39,7 +39,7 @@
 
         
         <article class="artForm">
-            <form action="<?=base_path()?>/app/gestionFormLogup" method="post">
+            <form action="<?=base_path()?>/app/artFormLogup" method="post">
 
                 <?php
                 if( isset($_GET['error']) ){

@@ -7,16 +7,16 @@ import { resolve } from 'node:path';
 // En Vite vanilla, cada vista carga un JS que a su vez importa el SCSS.
 // Así, en dev se sirve el CSS vía JS y en build se genera el CSS y se enlaza.
 const entrypoints = [
-  'src/js/views/404.js',
-  'src/js/views/contacto.js',
-  'src/js/views/gracias.js',
-  'src/js/views/inicio.js',
-  'src/js/views/producto.js',
-  'src/js/views/productos.js',
-  'src/js/views/quienesSomos.js',
-  'src/js/views/terminos.js',
-  'src/js/views/templates.js',
-  'src/js/views/zonaAdmin.js',
+  'src/js/404.js',
+  'src/js/contacto.js',
+  'src/js/gracias.js',
+  'src/js/inicio.js',
+  'src/js/producto.js',
+  'src/js/productos.js',
+  'src/js/quienesSomos.js',
+  'src/js/terminos.js',
+  'src/js/templates.js',
+  'src/js/zonaAdmin.js',
 ];
 
 export default defineConfig(({ command }) => {

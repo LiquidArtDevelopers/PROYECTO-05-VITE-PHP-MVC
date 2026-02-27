@@ -1,6 +1,6 @@
-@use 'config' as c;
-@use 'global';
-@use 'artForm';
+@use 'resources/config' as c;
+@use 'resources/global';
+@use 'resources/artForm';
 
 header{
     background-image: url('/assets/img/vistas/quienes-somos/quienes-somos-1500.avif');

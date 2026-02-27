@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros productos panaderos</title>
     <meta name="description" content="">
-    <?php echo vite_tags('src/js/views/productos.js'); ?>
+    <?php echo vite_tags('src/js/productos.js'); ?>
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?>/es/productos">

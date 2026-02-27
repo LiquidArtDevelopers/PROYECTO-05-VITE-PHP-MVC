@@ -7,7 +7,7 @@
     <meta name="description" content="<?= $seo_description ?>">
 
     <!-- ASIGNACIÓN DE ARCHIVO CSS (MINIFICADO) A ESTE HTML -->
-    <?php echo vite_tags('src/js/views/contacto.js'); ?>
+    <?php echo vite_tags('src/js/contacto.js'); ?>
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?><?= $link_canonical ?>">
@@ -55,7 +55,7 @@
                 <h3><?= $form_h3 ?></h3>
 
                 <!-- Al abrir este otro archivo, genero otro scope, se reseta y limpia la memoria en el servidor -->
-                <form action="<?=base_path()?>/app/gestionForm" method="post">
+                <form action="<?=base_path()?>/app/artForm" method="post">
 
                     <?php
                     if( isset($_GET['campo']) ){

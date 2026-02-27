@@ -75,8 +75,8 @@ if ($url != "/") {
 } else {
     // Si la ruta termina viene vacía como "/", redirigimos a la ruta principal con el idioma principal para que venga como "/es"
     header("HTTP/1.1 301 Moved Permanently");
-    $idioma = $_ENV['LANG_DEFAULT'];
-    header("Location: /$idioma");
+    $lang = $_ENV['LANG_DEFAULT'];
+    header("Location: /$lang");
     exit;
 }
 

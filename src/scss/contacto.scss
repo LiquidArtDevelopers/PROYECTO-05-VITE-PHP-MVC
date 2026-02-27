@@ -1,8 +1,8 @@
-@use 'config' as c;
-@use 'global';
+@use 'resources/config' as c;
+@use 'resources/global';
 
 
-@use 'artForm';
+@use 'resources/artForm';
 
 header{
     background-image: url('/assets/img/vistas/inicio/panaderia-pasteleria-aginaga-1500.avif');

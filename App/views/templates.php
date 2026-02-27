@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 3 Recursos HTML y SCSS</title>
-    <?php echo vite_tags('src/js/views/templates.js'); ?>
+    <?php echo vite_tags('src/js/templates.js'); ?>
 </head>
 <body>
     <!-- NAV -->
@@ -279,7 +279,7 @@
             <article class="artForm">
                 <h3>Formulario de contacto</h3>
 
-                <form action="<?=base_path()?>/app/gestionForm" method="post">
+                <form action="<?=base_path()?>/app/artForm" method="post">
 
                     <?php
                     if( isset($_GET['campo']) ){
@@ -325,6 +325,124 @@
 
                 </form>
 
+            </article>
+
+            <!-- artForm01 -->
+            <article class="artForm01">
+
+                <?php
+                // comprobar si hay variables get en la URL
+                // si hay variables las voy a recoger aquí
+                // si recojo variables, las usaré en el formulario para mostrar mensajes, por ejemplo de error, por ejemplo losvalorfes que el user había puesto antes en el formulario
+                // Recoger el error si existe error, y mostrar el mensaje con el error
+                // Depende del error, lo mostraremos encima del input donde está el error
+                // Como recogemos los value de los input que el user mandó al backend, volvemos a rellenar los values de los input con esos valores, para que se respete el UX
+
+                if(isset($_GET['error'])){
+                    $error = $_GET['error'];
+                    $campo = $_GET['campo'];
+                    $nombre = $_GET['nombre'];
+                    $telefono = $_GET['tel'];
+                    $email = $_GET['email'];
+                    $mensaje = $_GET['mensaje'];
+                }
+
+                ?>
+
+                <h3>(h3) formulario y datos</h3>
+                <div>
+                    <div class="contenedor-form">
+                    <img src="<?=$_ENV['RUTA']?>/assets/img/system/mail.svg" alt="">
+                    <?php
+                    if(!isset($_GET['envio'])){              
+                    ?>
+                    <form action="<?=base_path()?>/app/artForm01" method="post" id="idForm">
+
+                        <?php
+                        if(isset($error)){   
+                        ?>
+                        <p class="error">Hay un error en el campo <?=$campo?> de tipo <?= $error?></p>
+                        <?php
+                        }
+                        ?>
+
+                        <!-- nombre -->
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe aquí tu nombre *" value="<?php if(isset($error)){echo $nombre;}?>">
+
+                        <!-- teléfono -->
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Escribe aquí tu teléfono *" value="<?php if(isset($error)){echo $telefono;}?>">
+
+                        <!-- Correo -->
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Escribe aquí tu correo electrónico" value="<?php if(isset($error)){echo $email;}?>">
+
+                        <!-- Mensaje -->
+                        <label for="mensaje">Escribe tu mensaje</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje"><?php if(isset($error)){echo $mensaje;}?></textarea>
+
+                        <!-- términos -->
+                        <div class="horizontal">
+                        <label for="terminos">Aceptar términos y condiciones de privacidad</label>
+                        <input type="checkbox" name="terminos" id="terminos">
+                        </div>
+                        
+
+                        <!-- captcha -->
+                        <label for="respuesta">Resuelve</label>
+                        <div class="horizontal">
+                        <span id="num1">3</span>
+                        <span id="operador">+</span>
+                        <span id="num2">7</span>
+                        <input type="text" name="respUser" id="respuesta" placeholder="Respuesta" autocomplete="off">
+                        <input type="hidden" name="respSystem" id="respSystem" value="">
+                        </div>                    
+
+                        <input type="hidden" name="url" value="<?= $url ?>">
+
+                        <input type="submit" class="boton" value="Enviar">
+                    </form>
+                    <?php
+                    }else{
+                        $nombre=$_GET['nombre'];
+                    ?>
+                    <h3>Gracias, hemos recibido tu consulta <?= $nombre ?></h3>
+                    <?php
+                    }
+                    ?>
+
+                    </div>
+                    <div class="contenedor-info">
+                    <ul>
+                        <li>
+                        <a href="tel:+34943123123" target="_blank">
+                            <img src="<?=$_ENV['RUTA']?>/assets/img/system/tel.svg" alt="" title="">
+                            <span>943 123 123</span>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="mailto:aranaz@webda.eus" target="_blank">
+                            <img src="<?=$_ENV['RUTA']?>/assets/img/system/mail.svg" alt="" title="">
+                            <span>aranaz@webda.eus</span>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://wa.me/628749350" target="_blank">
+                            <img src="<?=$_ENV['RUTA']?>/assets/img/system/wa.svg" alt="" title="">
+                            <span>628 749 350</span>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://maps.app.goo.gl/Kh7rZM3WF1chSZSj7" target="_blank">
+                            <img src="<?=$_ENV['RUTA']?>/assets/img/system/map.svg" alt="" title="">
+                            <span>C/ Juan Fermín, Juan F. Gilisagasti Kalea, 4, 1º, 20018 Donostia / San Sebastián, Gipuzkoa</span>
+                        </a>
+                        </li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.901188915529!2d-2.0047191655624914!3d43.29790730427824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b013f0513629%3A0x57e4ff3311f619d9!2s%C3%81rea%20Escuela%20de%20Dise%C3%B1o%20y%20Nuevas%20Tecnolog%C3%ADas!5e1!3m2!1ses!2ses!4v1768584957042!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </article>
 
         </section>

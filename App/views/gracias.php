@@ -7,7 +7,7 @@
     <meta name="description" content="<?= $seo_description ?>">
     
     <!-- linko el css que le corresponde a esta vista -->
-    <?php echo vite_tags('src/js/views/gracias.js'); ?>
+    <?php echo vite_tags('src/js/gracias.js'); ?>
 
     <!-- Url de esta vista -->
     <link rel="canonical" href="<?=$_ENV['RUTA']?><?= $link_canonical ?>">

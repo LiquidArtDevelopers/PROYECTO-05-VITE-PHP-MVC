@@ -1,89 +1,89 @@
 {
-  "src/js/views/404.js": {
-    "file": "js/src/js/views/404.js-BWimnRfg.js",
-    "name": "src/js/views/404.js",
-    "src": "src/js/views/404.js",
+  "src/js/404.js": {
+    "file": "js/src/js/404.js-BWimnRfg.js",
+    "name": "src/js/404.js",
+    "src": "src/js/404.js",
     "isEntry": true,
     "css": [
       "css/404-BH_1ceQL.css"
     ]
   },
-  "src/js/views/contacto.js": {
-    "file": "js/src/js/views/contacto.js-Svh8lHYm.js",
-    "name": "src/js/views/contacto.js",
-    "src": "src/js/views/contacto.js",
+  "src/js/contacto.js": {
+    "file": "js/src/js/contacto.js-Svh8lHYm.js",
+    "name": "src/js/contacto.js",
+    "src": "src/js/contacto.js",
     "isEntry": true,
     "css": [
       "css/contacto-ZRNzxAa9.css"
     ]
   },
-  "src/js/views/gracias.js": {
-    "file": "js/src/js/views/gracias.js-Dg6wN68K.js",
-    "name": "src/js/views/gracias.js",
-    "src": "src/js/views/gracias.js",
+  "src/js/gracias.js": {
+    "file": "js/src/js/gracias.js-Dg6wN68K.js",
+    "name": "src/js/gracias.js",
+    "src": "src/js/gracias.js",
     "isEntry": true,
     "css": [
       "css/gracias-CRQzoGQH.css"
     ]
   },
-  "src/js/views/inicio.js": {
-    "file": "js/src/js/views/inicio.js-DUoPcUNs.js",
-    "name": "src/js/views/inicio.js",
-    "src": "src/js/views/inicio.js",
+  "src/js/inicio.js": {
+    "file": "js/src/js/inicio.js-BALehJmi.js",
+    "name": "src/js/inicio.js",
+    "src": "src/js/inicio.js",
     "isEntry": true,
     "css": [
-      "css/inicio-S40GHx3e.css"
+      "css/inicio-cmgCLrBP.css"
     ]
   },
-  "src/js/views/producto.js": {
-    "file": "js/src/js/views/producto.js-CDkYbqwo.js",
-    "name": "src/js/views/producto.js",
-    "src": "src/js/views/producto.js",
+  "src/js/producto.js": {
+    "file": "js/src/js/producto.js-CDkYbqwo.js",
+    "name": "src/js/producto.js",
+    "src": "src/js/producto.js",
     "isEntry": true,
     "css": [
       "css/producto-B1vPg1rY.css"
     ]
   },
-  "src/js/views/productos.js": {
-    "file": "js/src/js/views/productos.js-C4N3KZlv.js",
-    "name": "src/js/views/productos.js",
-    "src": "src/js/views/productos.js",
+  "src/js/productos.js": {
+    "file": "js/src/js/productos.js-C4N3KZlv.js",
+    "name": "src/js/productos.js",
+    "src": "src/js/productos.js",
     "isEntry": true,
     "css": [
       "css/productos-kHmLbMla.css"
     ]
   },
-  "src/js/views/quienesSomos.js": {
-    "file": "js/src/js/views/quienesSomos.js-DEBMqfcD.js",
-    "name": "src/js/views/quienesSomos.js",
-    "src": "src/js/views/quienesSomos.js",
+  "src/js/quienesSomos.js": {
+    "file": "js/src/js/quienesSomos.js-DEBMqfcD.js",
+    "name": "src/js/quienesSomos.js",
+    "src": "src/js/quienesSomos.js",
     "isEntry": true,
     "css": [
       "css/quienesSomos-CQw6QoN_.css"
     ]
   },
-  "src/js/views/templates.js": {
-    "file": "js/src/js/views/templates.js-DcwRoIzk.js",
-    "name": "src/js/views/templates.js",
-    "src": "src/js/views/templates.js",
+  "src/js/templates.js": {
+    "file": "js/src/js/templates.js-CAv1XN6l.js",
+    "name": "src/js/templates.js",
+    "src": "src/js/templates.js",
     "isEntry": true,
     "css": [
-      "css/templates-BLO9yrbX.css"
+      "css/templates-DPDmqV_u.css"
     ]
   },
-  "src/js/views/terminos.js": {
-    "file": "js/src/js/views/terminos.js-B9mO4QRC.js",
-    "name": "src/js/views/terminos.js",
-    "src": "src/js/views/terminos.js",
+  "src/js/terminos.js": {
+    "file": "js/src/js/terminos.js-B9mO4QRC.js",
+    "name": "src/js/terminos.js",
+    "src": "src/js/terminos.js",
     "isEntry": true,
     "css": [
       "css/terminos-DYv4LJJV.css"
     ]
   },
-  "src/js/views/zonaAdmin.js": {
-    "file": "js/src/js/views/zonaAdmin.js-BxljaID5.js",
-    "name": "src/js/views/zonaAdmin.js",
-    "src": "src/js/views/zonaAdmin.js",
+  "src/js/zonaAdmin.js": {
+    "file": "js/src/js/zonaAdmin.js-BxljaID5.js",
+    "name": "src/js/zonaAdmin.js",
+    "src": "src/js/zonaAdmin.js",
     "isEntry": true,
     "css": [
       "css/zonaAdmin-DcOmY1Lx.css"

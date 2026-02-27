@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $seo_title ?></title>
     <meta name="description" content="<?= $seo_description ?>">
-    <?php echo vite_tags('src/js/views/404.js'); ?>
+    <?php echo vite_tags('src/js/404.js'); ?>
 
     <!-- Indexación y autoridad-->
     <meta name="robots" data-lang="robots" content="nofollow, noindex">
