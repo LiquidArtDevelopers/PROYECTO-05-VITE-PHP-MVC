@@ -22,6 +22,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $fecha = date('Y-m-d H:i:s');
 
 $url = $_POST['url'];
+$lang = $_POST['lang'];
 
 
 
@@ -65,9 +66,6 @@ if($respUser != $respSystem){
     header("location:".$_ENV['RUTA'].$url."?error=error&campo=captcha&nombre=$nombre&tel=$telefono&email=$email&mensaje=$mensaje#artForm01");
     die; 
 }
-
-
-
 
 
 
@@ -123,9 +121,17 @@ if(comprobarCaracteres($mensaje, 4, 200)){
 
 // 3 enviar correos de aviso: a la empresa y al propio usuario
 
+// 
+// TODO: PENDIENTE VARIABILIZAR EL CUERPO DEL CORREO EN EL IDIOMA DEL USUARIO. MISMA LÓGICA EXTRACT QUE EN EL INDEX
+// TODO: PLACEHOLDEAR ENCABEZADOS DEL TEMPLATE DEL CORREO, PARA QUE TAMBIÉN SEAN VALORES VARIABLES ADECUADOS AL IDIOMA DEL USUARIO
+// aquí, sabiendo el lang del user, podemos cargar el json con los textos que queremos en el correo en el idioma apropiado
+// haríamos el extract de dicho json, y obtendríamos las variables php de esos textos, que podríamos usar tanto en el head como en el cuerpo del correo
+// haríamos una carpeta adicional en languages para el recurso ejemplo /artForm01. dentro tednríamos los es.json y eu.json, o x, que hiciesen falta.
+// 
+
 // 3.1 enviar un correo al ADMIN DE LA WEB
 // recoger más variables que necesita el phpMailer:correo emisor y el nombre emisor,el correo receptor y su nombre, título del correo
-$urlWeb = "http://localhost:3000";
+$web = $_ENV['RUTA'];
 $correoEmisor =$_ENV['EMAIL_WEB'];
 $nombreEmisor ="Web Panadería";
 $correoDestinatario = $_ENV['EMAIL_ADMIN'];
@@ -133,12 +139,13 @@ $nombreDestinatario= "Admin de la web";
 $asunto = "Has recibido una nueva consulta en la web de $nombre";
 
 // recoger el template con los placeholders
-$html = file_get_contents('./templates/artForm01.html');
+$html = file_get_contents($basePath . "/App/app/templates/artForm01.html");
 // dar el cambiazo a los placeholders por valores definitivos
 
 // array asociativo de las relaciones de placeholders con los valores que tendrá para este correo
 $vars = [
-    '{url}'                 => $urlWeb,
+    '{web}'                 => $web,
+    '{url}'                 => $url,
     '{asunto}'              => $asunto,
     '{aviso}'               => "Has recibido un correo pidiendo información de $nombre. A continuación sus datos. Ha aceptado los términos de privacidad. ",
     '{explicacion}'         => "Has recibido un correo pidiendo información de $nombre. A continuación sus datos. Ha aceptado los términos de privacidad. ",
@@ -153,7 +160,7 @@ $vars = [
 
 ];
 $cuerpo = str_replace(array_keys($vars), array_values($vars), $html);
-include "./envioPhpMailer.php";
+include $basePath . "/App/app/envioPhpMailer.php";
 
 
 // 3.2 enviar un correo al USUARIO DE LA WEB
@@ -166,12 +173,13 @@ $nombreDestinatario= $nombre;
 $asunto = "$nombre, hemos recibido tu consulta.";
 
 // recoger el template con los placeholders
-$html = file_get_contents('./templates/artForm01.html');
+$html = file_get_contents($basePath . "/App/app/templates/artForm01.html");
 // dar el cambiazo a los placeholders por valores definitivos
 
 // array asociativo de las relaciones de placeholders con los valores que tendrá para este correo
 $vars = [
-    '{url}'                 => $urlWeb,
+    '{web}'                 => $web,
+    '{url}'                 => $url,
     '{asunto}'              => $asunto,
     '{aviso}'               => "$nombre, hemos recibido satisfactóriamente tu consulta.",
     '{explicacion}'         => "En breve nos pondremos en contacto contigo.",
@@ -186,15 +194,15 @@ $vars = [
 ];
 
 $cuerpo = str_replace(array_keys($vars), array_values($vars), $html);
-include "./envioPhpMailer.php";
+include $basePath . "/App/app/envioPhpMailer.php";
 
 
 // 4 guardar los datos en una bbdd
-// TODO
+
 
 // conexión a la DB
 // Configuración de la conexión en $con
-$con = mysqli_connect($_ENV['DB_HOST'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
+$con = mysqli_connect($_ENV['BBDD_HOST'], $_ENV['BBDD_USER'], $_ENV['BBDD_PASS'], $_ENV['BBDD_BBDD']);
 
 // si la conexión es false, sacamos error
 // comprobación de la conexión
@@ -203,22 +211,20 @@ if($con === false){
 }else{
     // en caso de que haya conexión, continuamos
     $con->set_charset("utf8mb4");
-    $sql = "INSERT INTO `consultas`(`nombre`, `telefono`, `email`, `mensaje`, `ip`, `fecha`) VALUES (?,?,?,?,?,?)";
+    $sql = "INSERT INTO `consultas_web`(`creado_en`, `nombre`, `telefono`, `email`, `mensaje`, `ip`, `idioma`, `url_origen`) VALUES (?,?,?,?,?,?,?,?)";
     $stmt = mysqli_prepare($con, $sql);
-    // ejecutamos el insert del registro en la tabla consultas de la db con un prepare
+    // ejecutamos el insert del registro en la tabla consultas_web de la db con un prepare
     if($stmt === false){
         error_log('Error al preparar la insercion de la consulta: ' . mysqli_error($con));
     }else{
         // inserción definitiva en al DB
-        mysqli_stmt_bind_param($stmt, "ssssss", $nombre, $telefono, $email, $mensaje, $ip, $fecha);
+        mysqli_stmt_bind_param($stmt, "ssssssss", $fecha, $nombre, $telefono, $email, $mensaje, $ip, $lang, $url);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
     }
     // salimos
     mysqli_close($con);
 }
-
-
 
 
 

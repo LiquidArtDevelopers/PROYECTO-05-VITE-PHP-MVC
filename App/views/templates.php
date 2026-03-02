@@ -328,7 +328,7 @@
             </article>
 
             <!-- artForm01 -->
-            <article class="artForm01">
+            <article class="artForm01" id="artForm01">
 
                 <?php
                 // comprobar si hay variables get en la URL
@@ -400,6 +400,7 @@
                         </div>                    
 
                         <input type="hidden" name="url" value="<?= $url ?>">
+                        <input type="hidden" name="lang" value="<?= $lang ?>">
 
                         <input type="submit" class="boton" value="Enviar">
                     </form>
