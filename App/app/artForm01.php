@@ -165,7 +165,7 @@ include $basePath . "/App/app/envioPhpMailer.php";
 
 // 3.2 enviar un correo al USUARIO DE LA WEB
 // recoger más variables que necesita el phpMailer:correo emisor y el nombre emisor,el correo receptor y su nombre, título del correo
-$urlWeb = "http://localhost:3000";
+$web = $_ENV['RUTA'];
 $correoEmisor =$_ENV['EMAIL_WEB'];
 $nombreEmisor ="Web Panadería";
 $correoDestinatario = $email;

@@ -279,6 +279,7 @@
             <article class="artForm">
                 <h3>Formulario de contacto</h3>
 
+                <!-- Al abrir este otro archivo, genero otro scope, se reseta y limpia la memoria en el servidor -->
                 <form action="<?=base_path()?>/app/artForm" method="post">
 
                     <?php
@@ -294,30 +295,53 @@
                     }
                     ?>
 
-                    <span class="error"><?php if( isset($campo) && $campo == "nombre"){echo "Hay un error en el campo $campo de tipo $error";} ?></span>
+                    <span class="error"><?php if(isset($campo) && $campo == "nombre"){echo sprintf("Hay un error en el campo %s de tipo %s", $campo, $error);} ?></span>
                     <label for="nombre">Nombre *</label>
                     <!-- <input type="text" name="nombre" id="nombre" placeholder="* Escribe tu nombre" minlength="3" maxlength="40" required > -->
                     <input type="text" class='<?php if(isset($campo) && $campo == "nombre"){ echo "inputError";} ?>' name="nombre" id="nombre" placeholder="* Escribe tu nombre" value="<?php if(isset($nombre)){echo $nombre;}?>">
 
-                    <span class="error"><?php if( isset($campo) && $campo == "telefono"){echo "Hay un error en el campo $campo de tipo $error";} ?></span>
+                    <span class="error"><?php if( isset($campo) && $campo == "telefono"){echo sprintf("Hay un error en el campo %s de tipo %s", $campo, $error);} ?></span>
                     <label for="tel">Teléfono</label>
                     <input type="tel" class='<?php if(isset($campo) && $campo == "telefono"){ echo "inputError";} ?>' name="tel" id="tel" placeholder="Aquí tu teléfono" value="<?php if(isset($tel)){echo $tel;}?>">
 
-                    
-                    <span class="error"><?php if( isset($campo) && $campo == "email"){echo "Hay un error en el campo $campo de tipo $error";} ?></span>
+
+                    <span class="error"><?php if( isset($campo) && $campo == "email"){echo sprintf("Hay un error en el campo %s de tipo %s", $campo, $error);} ?></span>
                     <label for="email">Email *</label>
                     <input type="email" class='<?php if(isset($campo) && $campo == "email"){ echo "inputError";} ?>' name="email" id="email" placeholder="* Correo electrónico" value="<?php if(isset($email)){echo $email;}?>">
 
 
-                    <span class="error"><?php if( isset($campo) && $campo == "mensaje"){echo "Hay un error en el campo $campo de tipo $error";} ?></span>
+                    <span class="error"><?php if( isset($campo) && $campo == "mensaje"){echo sprintf("Hay un error en el campo %s de tipo %s", $campo, $error);} ?></span>
                     <label for="mensaje">Comentarios</label>
                     <textarea name="mensaje" class='<?php if(isset($campo) && $campo == "mensaje"){ echo "inputError";} ?>' id="mensaje" placeholder="Escribe aquí tu mensaje"><?php if(isset($mensaje)){echo $mensaje;}?></textarea>
 
                     <span class="error"><?php if( isset($campo) && $campo == "terminos"){echo "Para poder enviar una consulta, debes aceptar los términos";} ?></span>
                     <div>
-                        <input type="checkbox" name="terminos" id="aceptarTerminos">                        
-                        <labelfor="aceptarTerminos">Aceptar <a href="<?=$_ENV['RUTA']?>/es/terminos-legales">términos y condiciones de privacidad</a></label>
+                        <input type="checkbox" name="terminos" id="aceptarTerminos">
+                        <label for="aceptarTerminos">Aceptar <a href="<?=$_ENV['RUTA']?>/es/terminos-legales">términos y condiciones de privacidad</a></label>
                     </div>
+
+                    <!-- CAPTCHA -->
+                    <span class="error"><?php if(isset($campo) && $campo == "captcha"){echo "No has resuelto correctamente el Captcha";} ?></span>
+                    <div>
+                        <label for="respUser">Resuelve:</label>
+
+                        <!-- campos que rellenamos desde js con números random -->
+                        <span id="num1">XX</span>
+                        <span>+</span>
+                        <span id="num2">XX</span>
+
+                        <!-- campo que debe rellenar el usuario con la solución -->
+                        <input type="text" name="respUser" id="respUser">
+
+                        <!-- campo oculto con la respuesta correcta asignada desde js -->
+                        <input type="hidden" name="respSystem" id="respSystem" value="XXXX">
+                    </div>
+
+                    <!-- input oculto donde el value es el valor de $lang, ergo el idioma -->
+                    <input type="text" name="inputIdioma" value="<?= $lang?>" style="display:none;">
+                    <!-- otro input oculto -->
+                    <input type="text" name="inputUrl" value="<?= $url?>" style="display:none;">
+
 
                     <input type="submit" value="ENVIAR" class="boton">
 
@@ -392,11 +416,11 @@
                         <!-- captcha -->
                         <label for="respuesta">Resuelve</label>
                         <div class="horizontal">
-                        <span id="num1">3</span>
-                        <span id="operador">+</span>
-                        <span id="num2">7</span>
-                        <input type="text" name="respUser" id="respuesta" placeholder="Respuesta" autocomplete="off">
-                        <input type="hidden" name="respSystem" id="respSystem" value="">
+                        <span id="num1Form01">3</span>
+                        <span id="operadorForm01">+</span>
+                        <span id="num2Form01">7</span>
+                        <input type="text" name="respUser" id="respuestaForm01" placeholder="Respuesta" autocomplete="off">
+                        <input type="hidden" name="respSystem" id="respSystemForm01" value="">
                         </div>                    
 
                         <input type="hidden" name="url" value="<?= $url ?>">

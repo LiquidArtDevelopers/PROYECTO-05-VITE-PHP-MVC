@@ -11,10 +11,10 @@ const idForm = document.querySelector("#idForm")
 
 if(idForm){
     // RECOJO EN CONSTANTES LOS ELEMENTOS A LOS QUE LES TENDRÉ QUE INSERTAR LOS NÚMEROS RANDOM Y TAMNBIÉN EL INPUT
-    const num1 = document.getElementById("num1")
-    const num2 = document.getElementById("num2")
-    const operador = document.getElementById("operador")
-    const respSystem = document.getElementById("respSystem")
+    const num1 = document.getElementById("num1Form01")
+    const num2 = document.getElementById("num2Form01")
+    const operador = document.getElementById("operadorForm01")
+    const respSystem = document.getElementById("respSystemForm01")
 
 
 
