@@ -131,4 +131,7 @@ $arrayRutasPost = [
     '/app/artForm01' => [
         'view' => '/app/artForm01.php',
     ],
+    '/app/artForm02' => [
+        'view' => '/app/artForm02.php',
+    ],
 ];

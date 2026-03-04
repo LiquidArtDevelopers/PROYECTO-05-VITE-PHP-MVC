@@ -122,7 +122,7 @@
             <article class="art01">
                 <img src="https://dummyimage.com/1000x700" alt="">
                 <div>
-                    <h3>Encabezado h3 artículo tipo art01</h3>
+                    <h3>Articulo 01</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam pariatur? Eius excepturi repellendus esse qui doloremque a similique sint.</p>
                     <!-- <a href="" class="boton">CTA</a> -->
                     <a href="" class="moduloBoton02">
@@ -136,7 +136,7 @@
             <article class="art02">
 
                 <div class="textos">
-                    <h3>Encabezado h3 del art02</h3>
+                    <h3>Articulo 02</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae repudiandae obcaecati magni odio eius maxime iste expedita? Cum vel ad nihil laborum. Nobis unde aperiam rerum pariatur dignissimos, quam consequatur.</p>
                     <!-- <a href="" class="boton">Más info</a> -->
                     <a href="" class="moduloBoton02">
@@ -154,36 +154,36 @@
             </article>
 
             <!-- Artículo 02-bis -->
-            <article class="art02-bis">
+                        <article class="art02-bis">
                 <div class="textos">
-                    <h3>La mejor calidad en productos realizados cada día</h3>                  
-                    <p>Nuestra carta de productos se actualiza cada estación, pero se fundamenta en tres pilares que definen nuestra identidad. En primer lugar, el <b>pan de masa madre</b> que fermenta durante 24 horas, desarrollando una corteza crujiente y un alveolado irregular lleno de sabor y nutrientes: es el favorito de quienes nos buscan como “<b>panadería en Aginaga</b>” o “<b>pan masa madre en Usurbil</b>”. En segundo lugar, nuestros <b>pasteles artesanos</b>, elaborados con mantequilla y huevos de caserío, sin aromas artificiales, con rellenos de temporada como crema de avellana de Navarra o compota de manzana reineta. Finalmente, las <b>torrijas</b>, inspiradas en la receta de la amona pero disponibles todo el año; las servimos con miel de azahar o con un delicado almíbar de vainilla bourbon que las hace inolvidables. Cada producto cuenta con su propio proceso cuidadoso, fichas de alérgenos actualizadas y la posibilidad de <b>reserva online</b> para que llegues y lo tengas listo. Además, nuestras famosas <b>torrijas de Aginaga</b> pueden reservarse en línea para cualquier celebración, destacando nuestra <b>panadería en Aginaga</b> como la opción preferida para un dulce tradicional.</p>
+                    <h3>Articulo 02-bis</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia pariatur voluptatum molestias consequatur neque, aliquid harum iusto deleniti porro nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium impedit dolorum veritatis accusamus, adipisci mollitia eaque molestiae officiis at.</p>
                     <a href="./productos-panaderia.php" class="moduloBoton02">
-                        <span>Más información</span>
-                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="Ir a Nuestros productos" title="Más información">
+                        <span>Lorem ipsum</span>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum">
                     </a>
                 </div>
 
-                <div class="imagenes">                    
-                    <a href="<?=$_ENV['RUTA']?>/es/productos" title="Los mejores panes de masa madre">
-                        <img src="<?=$_ENV['RUTA']?>/assets/img/vistas/inicio/amplio-surtido-panes-1200.avif" alt="Pan de masa madre en Usurbil y Aginaga" title="Pan de masa madre en Usurbil y Aginaga">
-                        <h4>Panadería</h4>
+                <div class="imagenes">
+                    <a href="<?=$_ENV['RUTA']?>/es/productos" title="Lorem ipsum dolor sit amet">
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/vistas/inicio/amplio-surtido-panes-1200.avif" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet">
+                        <h4>Lorem ipsum</h4>
                     </a>
-                    <a href="<?=$_ENV['RUTA']?>/es/productos" title="Pastelería artesana bajo demanda">
-                        <img src="<?=$_ENV['RUTA']?>/assets/img/vistas/inicio/amplio-surtido-pasteles-1200.avif" alt="Pasteles artesanos: del obrador a tu mesa" title="Pasteles artesanos: del obrador a tu mesa">
-                        <h4>Pastelería</h4>
+                    <a href="<?=$_ENV['RUTA']?>/es/productos" title="Lorem ipsum dolor sit amet">
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/vistas/inicio/amplio-surtido-pasteles-1200.avif" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet">
+                        <h4>Lorem ipsum</h4>
                     </a>
-                    <a href="<?=$_ENV['RUTA']?>/es/productos" title="Torrijas tradicionales a fuego lento">
-                        <img src="<?=$_ENV['RUTA']?>/assets/img/vistas/inicio/las-mejores-torrijas-de-gipuzkoa1200.avif" alt="Torrijas tradicionales todo el año" title="Torrijas tradicionales todo el año">
-                        <h4>Torrijas</h4>
-                    </a>                    
+                    <a href="<?=$_ENV['RUTA']?>/es/productos" title="Lorem ipsum dolor sit amet">
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/vistas/inicio/las-mejores-torrijas-de-gipuzkoa1200.avif" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet">
+                        <h4>Lorem ipsum</h4>
+                    </a>
                 </div>
             </article>
 
             <!-- Artículo 03 -->
             <article class="art03">
                 
-                <h3>Encabezado h3 del art03</h3>
+                <h3>Articulo 03</h3>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro impedit deleniti cupiditate laudantium facere explicabo quo doloremque amet, molestias molestiae cum beatae, dolorum temporibus similique itaque dolore. Assumenda, possimus laborum.</p>
 
@@ -195,7 +195,7 @@
 
             <!-- artículo 4 -->
             <article class="art04">
-                <h3>ARTÍCULO art04</h3>
+                <h3>Articulo 04</h3>
                 <span class="ralla"></span>
                 <div class="contenedor-fichas">
                     <div class="ficha">
@@ -230,7 +230,7 @@
 
             <!-- artículo 05 -->
             <article class="art05">
-                <h3>Encabezado art05</h3>
+                <h3>Articulo 05</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis porro libero doloribus necessitatibus explicabo nostrum, itaque excepturi reprehenderit magni alias.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et qui laboriosam voluptas, maxime possimus ab dolor aliquam nobis repellendus voluptatem vero sed explicabo totam quaerat dolores veritatis fuga quibusdam cumque.</p>
                 <a href="" class="boton">CTA</a>
@@ -239,7 +239,7 @@
             <!-- artículpo 06 -->
             <article class="art06">
                 <div>
-                    <h3>Artículo 06 Lorem ipsum dolor sit. </h3>
+                    <h3>Articulo 06</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem soluta molestiae autem ipsam deleniti adipisci. Eius adipisci quo, quae officia quod rerum sequi, aliquid autem perspiciatis deleniti, laudantium nihil.</p>
                     <a href="#" title="" class="boton">CTA</a>
                 </div>     
@@ -247,7 +247,7 @@
 
             <!-- artículo 07 -->
             <article class="art07">
-                <h3>(h3) Nuestra panadería</h3>
+                <h3>Articulo 07</h3>
 
                 <img
                 srcset="
