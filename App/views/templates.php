@@ -27,7 +27,7 @@
         <section class="sect01">
             <div class="h2Especial">
                 <span></span>
-                <h2>Encabezado h2 de la sect01</h2>
+                <h2>Sección 01</h2>
             </div>
             <article>
                 <!-- hijo 1 -->
@@ -41,7 +41,7 @@
                             <h4>Encabezado h4</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto ipsam quam porro, rem non nulla distinctio eligendi id possimus.</p>
                             <a href="" class="moduloBoton01">
-                                <span>Leer más</span>
+                                <span>Módulo Botón 01</span>
                                 <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                             </a>
                         </div>
@@ -50,13 +50,13 @@
                             <h4>Encabezado h4</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto ipsam quam porro, rem non nulla distinctio eligendi id possimus.</p>
                             <a href="" class="moduloBoton01">
-                                <span>Leer más</span>
+                                <span>Módulo Botón 01</span>
                                 <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                             </a>
                         </div>
                     </div>
                     <a href="" class="moduloBoton02">
-                        <span>Contacta con nosotros</span>
+                        <span>Módulo Botón 02</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                     </a>
                 </div>
@@ -72,7 +72,7 @@
         <section class="sect02"> 
             <div class="h2Especial">
                 <span></span>
-                <h2>Encabezado h2 de la sect02</h2>
+                <h2>Sección 02</h2>
             </div>
             <div class="sect02-content">
                 <ul>
@@ -122,11 +122,11 @@
             <article class="art01">
                 <img src="https://dummyimage.com/1000x700" alt="">
                 <div>
-                    <h3>Articulo 01</h3>
+                    <h3>Artículo 01</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam pariatur? Eius excepturi repellendus esse qui doloremque a similique sint.</p>
                     <!-- <a href="" class="boton">CTA</a> -->
                     <a href="" class="moduloBoton02">
-                        <span>Conócenos</span>
+                        <span>Módulo Botón 02</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                     </a>
                 </div>
@@ -136,11 +136,11 @@
             <article class="art02">
 
                 <div class="textos">
-                    <h3>Articulo 02</h3>
+                    <h3>Artículo 02</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae repudiandae obcaecati magni odio eius maxime iste expedita? Cum vel ad nihil laborum. Nobis unde aperiam rerum pariatur dignissimos, quam consequatur.</p>
                     <!-- <a href="" class="boton">Más info</a> -->
                     <a href="" class="moduloBoton02">
-                        <span>Más información</span>
+                        <span>Módulo Botón 02</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                     </a>
                 </div>
@@ -154,12 +154,12 @@
             </article>
 
             <!-- Artículo 02-bis -->
-                        <article class="art02-bis">
+            <article class="art02-bis">
                 <div class="textos">
-                    <h3>Articulo 02-bis</h3>
+                    <h3>Artículo 02-bis</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia pariatur voluptatum molestias consequatur neque, aliquid harum iusto deleniti porro nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium impedit dolorum veritatis accusamus, adipisci mollitia eaque molestiae officiis at.</p>
                     <a href="./productos-panaderia.php" class="moduloBoton02">
-                        <span>Lorem ipsum</span>
+                        <span>Módulo Botón 02</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum">
                     </a>
                 </div>
@@ -183,7 +183,7 @@
             <!-- Artículo 03 -->
             <article class="art03">
                 
-                <h3>Articulo 03</h3>
+                <h3>Artículo 03</h3>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro impedit deleniti cupiditate laudantium facere explicabo quo doloremque amet, molestias molestiae cum beatae, dolorum temporibus similique itaque dolore. Assumenda, possimus laborum.</p>
 
@@ -195,7 +195,7 @@
 
             <!-- artículo 4 -->
             <article class="art04">
-                <h3>Articulo 04</h3>
+                <h3>Artículo 04</h3>
                 <span class="ralla"></span>
                 <div class="contenedor-fichas">
                     <div class="ficha">
@@ -230,7 +230,7 @@
 
             <!-- artículo 05 -->
             <article class="art05">
-                <h3>Articulo 05</h3>
+                <h3>Artículo 05</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis porro libero doloribus necessitatibus explicabo nostrum, itaque excepturi reprehenderit magni alias.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et qui laboriosam voluptas, maxime possimus ab dolor aliquam nobis repellendus voluptatem vero sed explicabo totam quaerat dolores veritatis fuga quibusdam cumque.</p>
                 <a href="" class="boton">CTA</a>
@@ -239,7 +239,7 @@
             <!-- artículpo 06 -->
             <article class="art06">
                 <div>
-                    <h3>Articulo 06</h3>
+                    <h3>Artículo 06</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem soluta molestiae autem ipsam deleniti adipisci. Eius adipisci quo, quae officia quod rerum sequi, aliquid autem perspiciatis deleniti, laudantium nihil.</p>
                     <a href="#" title="" class="boton">CTA</a>
                 </div>     
@@ -247,7 +247,7 @@
 
             <!-- artículo 07 -->
             <article class="art07">
-                <h3>Articulo 07</h3>
+                <h3>Artículo 07</h3>
 
                 <img
                 srcset="
@@ -272,12 +272,11 @@
                 <a href="" class="boton">CTA</a>
 
             </article>
-
-            
+          
 
             <!-- artForm -->
             <article class="artForm">
-                <h3>Formulario de contacto</h3>
+                <h3>Artículo Formulario</h3>
 
                 <!-- Al abrir este otro archivo, genero otro scope, se reseta y limpia la memoria en el servidor -->
                 <form action="<?=base_path()?>/app/artForm" method="post">
@@ -373,7 +372,7 @@
 
                 ?>
 
-                <h3>(h3) formulario y datos</h3>
+                <h3>Artículo Formulario 01</h3>
                 <div>
                     <div class="contenedor-form">
                     <img src="<?=$_ENV['RUTA']?>/assets/img/system/mail.svg" alt="">
@@ -469,6 +468,162 @@
                     </div>
                 </div>
             </article>
+
+            <!-- artForm02 ajax -->
+            <article class="artForm02">          
+
+                <h3>Artículo Formulario 02</h3>
+                <div>
+                    <div class="contenedor-form">
+                    
+                    <img src="<?=$_ENV['RUTA']?>/assets/img/system/mail.svg" alt="">
+                                    
+
+                    <!-- MODAL QUE SALE CUANDO SE ENVÍA EL FORM CON ÉXITO -->
+                    <div id="modal_envio">
+                        <!-- nuestro modal con html y css -->
+                        <h3 id="h3_modal_envio">Lorem ipsum dolor sit amet.</h3>
+                        <p id="p_modal_envio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quia porro obcaecati accusamus laborum fuga totam assumenda fugiat sint pariatur!</p>
+                        <div class="boton" id="boton_modal_envio">Escribir otra consulta</div>
+                    </div>
+
+                    <form id="idForAjax">
+                        
+                        <p class="error" id="errorForm02"></p>
+
+                        <!-- nombre -->
+                        <label for="nombreAjax">Nombre *</label>
+                        <input type="text" id="nombreAjax" name="nombre" placeholder="Escribe aquí tu nombre *">
+
+                        <!-- teléfono -->
+                        <label for="telefonoAjax">Teléfono *</label>
+                        <input type="tel" id="telefonoAjax" name="telefono" placeholder="Escribe aquí tu teléfono *">
+
+                        <!-- Correo -->
+                        <label for="emailAjax">Correo Electrónico</label>
+                        <input type="email" id="emailAjax" name="email" placeholder="Escribe aquí tu correo electrónico">
+
+                        <!-- Mensaje -->
+                        <label for="mensajeAjax">Escribe tu mensaje</label>
+                        <textarea name="mensaje" id="mensajeAjax" placeholder="Escribe aquí tu mensaje"></textarea>
+
+                        <!-- términos -->
+                        <div class="horizontal">
+                        <label for="terminosAjax">Aceptar términos y condiciones de privacidad</label>
+                        <input type="checkbox" name="terminos" id="terminosAjax">
+                        </div>
+                        
+
+                        <!-- captcha -->
+                        <label for="respuesta">Resuelve</label>
+                        <div class="horizontal">
+                        <span id="num1ajax"></span>
+                        <span id="operadorajax"></span>
+                        <span id="num2ajax"></span>
+                        <input type="text" name="respUser" id="respuestaajax" placeholder="Respuesta" autocomplete="off">
+                        <input type="hidden" name="respSystem" id="respSystemajax" value="">
+                        </div>
+
+                        <input type="hidden" name="url" value="<?= $url ?>">
+                        <input type="hidden" name="lang" value="<?= $lang ?>">
+
+                        <input type="submit" class="boton" value="Enviar" id="botonEnviarAjax">
+                    </form>
+                    
+                    <div class="moduloLoader01" id="moduloLoader01">
+                        <!-- <svg version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                        <circle fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
+                        <line fill="none" stroke-linecap="round" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
+                            <animateTransform 
+                                attributeName="transform" 
+                                dur="2s"
+                                type="rotate"
+                                from="0 50 50"
+                                to="360 50 50"
+                                repeatCount="indefinite" />
+                        </line>
+                        <line fill="none" stroke-linecap="round" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
+                            <animateTransform 
+                                attributeName="transform" 
+                                dur="15s"
+                                type="rotate"
+                                from="0 50 50"
+                                to="360 50 50"
+                                repeatCount="indefinite" />
+                        </line>
+                        </svg> -->
+                        <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                        <path fill="#000000" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+                            c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
+                                <animateTransform 
+                                attributeName="transform" 
+                                attributeType="XML" 
+                                type="rotate"
+                                dur="2s" 
+                                from="0 50 50"
+                                to="360 50 50" 
+                                repeatCount="indefinite" />
+                            </path>
+                        <path fill="#000000" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+                            c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
+                                <animateTransform 
+                                attributeName="transform" 
+                                attributeType="XML" 
+                                type="rotate"
+                                dur="1s" 
+                                from="0 50 50"
+                                to="-360 50 50" 
+                                repeatCount="indefinite" />
+                            </path>
+                        <path fill="#000000" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+                            L82,35.7z">
+                                <animateTransform 
+                                attributeName="transform" 
+                                attributeType="XML" 
+                                type="rotate"
+                                dur="2s" 
+                                from="0 50 50"
+                                to="360 50 50" 
+                                repeatCount="indefinite" />
+                            </path>
+                        </svg>
+                    </div>
+
+                    </div>
+                    <div class="contenedor-info">
+                    <ul>
+                        <li>
+                        <a href="tel:+34943123123" target="_blank">
+                            <img src="<?=$_ENV['RUTA']?>/assets/img/system/tel.svg" alt="" title="">
+                            <span>943 123 123</span>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="mailto:aranaz@webda.eus" target="_blank">
+                            <img src="<?=$_ENV['RUTA']?>/assets/img/system/mail.svg" alt="" title="">
+                            <span>aranaz@webda.eus</span>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://wa.me/628749350" target="_blank">
+                            <img src="<?=$_ENV['RUTA']?>/assets/img/system/wa.svg" alt="" title="">
+                            <span>628 749 350</span>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://maps.app.goo.gl/Kh7rZM3WF1chSZSj7" target="_blank">
+                            <img src="<?=$_ENV['RUTA']?>/assets/img/system/map.svg" alt="" title="">
+                            <span>C/ Juan Fermín, Juan F. Gilisagasti Kalea, 4, 1º, 20018 Donostia / San Sebastián, Gipuzkoa</span>
+                        </a>
+                        </li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.901188915529!2d-2.0047191655624914!3d43.29790730427824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b013f0513629%3A0x57e4ff3311f619d9!2s%C3%81rea%20Escuela%20de%20Dise%C3%B1o%20y%20Nuevas%20Tecnolog%C3%ADas!5e1!3m2!1ses!2ses!4v1768584957042!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </article>
+
 
         </section>
                
