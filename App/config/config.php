@@ -22,7 +22,6 @@ $arrayRutasGet = [
             'view'      => '/views/contacto.php',
             'content'   => 'contacto'
         ],
-
         '/es/showroom' => [
             'view'      => '/views/templates.php',
             'content'   => 'templates'

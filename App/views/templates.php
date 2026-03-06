@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 3 Recursos HTML y SCSS</title>
+    <meta name="description" content="">
     <?php echo vite_tags('src/js/templates.js'); ?>
+    
+
+    <?php
+    // Metadatos globales
+    include $appRoot . '/includes/metadatos_globales.php'
+    ?>
 </head>
 <body>
     <!-- NAV -->

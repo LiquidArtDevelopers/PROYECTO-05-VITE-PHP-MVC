@@ -223,7 +223,7 @@ $nombreDestinatario= "Admin de la web";
 $asunto = "Has recibido una nueva consulta en la web de $nombre";
 $cuerpo='
 <!DOCTYPE html>
-<html lang="es">
+<html lang="'.$lang.'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

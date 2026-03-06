@@ -43,7 +43,7 @@ if (isset($_SESSION['LOGIN']) && $_SESSION['LOGIN'] === "1") {
 }
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="<?= $lang ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,11 +52,23 @@ if (isset($_SESSION['LOGIN']) && $_SESSION['LOGIN'] === "1") {
     <?php echo vite_tags('src/js/zonaAdmin.js'); ?>
 
     <!-- Url de esta vista -->
-    <link rel="canonical" href="<?=$_ENV['RUTA']?><?= $link_canonical ?>">
+    <link rel="canonical" href="<?=$_ENV['RUTA']?><?= $url ?>">
  
     <!-- Indexación y autoridad-->
     <meta name="robots" data-lang="robots" content="nofollow, noindex">
     <meta name="referrer" content="origin">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?= $seo_title ?>">
+    <meta property="og:description" content="<?= $seo_description ?>">
+    <meta property="og:url" content="<?=$_ENV['RUTA']?><?= $url ?>">
+    <meta property="og:image" content="<?=$_ENV['RUTA']?><?= $seo_image ?>">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= $seo_title ?>">
+    <meta name="twitter:description" content="<?= $seo_description ?>">
+    <meta name="twitter:url" content="<?=$_ENV['RUTA']?><?= $url ?>">
+    <meta name="twitter:image" content="<?=$_ENV['RUTA']?><?= $seo_image ?>">
 
     <?php
     // Metadatos globales

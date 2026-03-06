@@ -27,6 +27,7 @@ export default defineConfig(({ command }) => {
     // En dev usamos base "/" para que los módulos se sirvan desde la raíz.
     // En build apuntamos a "/assets/" porque allí se publican los bundles.
     base: isDev ? '/' : '/assets/',
+    // Mantenemos /public disponible en dev para servir imÃ¡genes y fuentes.
     // Forzamos recarga completa cuando cambian archivos PHP (no hay HMR en PHP).
     plugins: [
       {
@@ -38,15 +39,8 @@ export default defineConfig(({ command }) => {
           );
 
           folders.forEach((folder) => {
-            if (!fs.existsSync(folder)) {
-              return;
-            }
-
-            fs.readdirSync(folder).forEach((file) => {
-              if (file.endsWith('.js') || file.endsWith('.css')) {
-                fs.unlinkSync(resolve(folder, file));
-              }
-            });
+            fs.rmSync(folder, { recursive: true, force: true });
+            fs.mkdirSync(folder, { recursive: true });
           });
         },
       },
@@ -63,6 +57,8 @@ export default defineConfig(({ command }) => {
     build: {
       // Generamos manifest para que PHP pueda saber los nombres finales de los assets.
       manifest: true,
+      // Evita copiar /public dentro de /public/assets (outDir estÃ¡ dentro de public).
+      copyPublicDir: false,
       // Carpeta de salida del build.
       outDir: 'public/assets',
       // Evitamos borrar toda la carpeta porque ahí viven imágenes y fuentes.
@@ -73,7 +69,8 @@ export default defineConfig(({ command }) => {
         // Convertimos la lista de entradas en un objeto compatible con Rollup.
         // Cada key es el path lógico y el value es la ruta absoluta del archivo.
         input: entrypoints.reduce((entries, entry) => {
-          entries[entry] = resolve(__dirname, entry);
+          const key = entry.replace(/^src\/js\//, '').replace(/\.js$/, '');
+          entries[key] = resolve(__dirname, entry);
           return entries;
         }, {}),
         output: {

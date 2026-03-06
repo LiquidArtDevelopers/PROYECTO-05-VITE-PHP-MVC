@@ -9,6 +9,24 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable($basePath);
 $dotenv->load();
 
+// Fallback de URL base: evita romper assets/imagenes si RUTA local se cuela en producciÃ³n.
+$httpHost = $_SERVER['HTTP_HOST'] ?? '';
+$rutaEnv = $_ENV['RUTA'] ?? '';
+$rutaEsLocal = str_contains($rutaEnv, 'localhost') || str_contains($rutaEnv, '127.0.0.1');
+$hostEsLocal = str_contains($httpHost, 'localhost') || str_contains($httpHost, '127.0.0.1');
+
+if ($httpHost !== '' && ($rutaEnv === '' || ($rutaEsLocal && !$hostEsLocal))) {
+    $scheme = 'http';
+
+    if (!empty($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
+        $scheme = trim(explode(',', $_SERVER['HTTP_X_FORWARDED_PROTO'])[0]);
+    } elseif (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
+        $scheme = 'https';
+    }
+
+    $_ENV['RUTA'] = $scheme . '://' . $httpHost;
+}
+
 require_once $appRoot . "/config/helpers.php";
 
 

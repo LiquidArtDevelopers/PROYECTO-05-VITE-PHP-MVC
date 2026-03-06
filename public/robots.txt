@@ -4,6 +4,16 @@ User-agent: *
 Disallow: /app/
 Disallow: /vendor/
 Disallow: /README/
+Disallow: /es/showroom
+Disallow: /eu/showroom
+Disallow: /es/gracias
+Disallow: /eu/eskerrikasko
+Disallow: /es/zona-admin
+Disallow: /eu/admin-gunea
+Disallow: /es/logout
+Disallow: /eu/logout
+Disallow: /es/registro
+Disallow: /eu/erregistroa
 
 # Sitemap
-Sitemap: https://bbdd-profe.webda.eus/sitemap.xml
+Sitemap: https://profe-lab-mvc.webda.eus/sitemap.xml
