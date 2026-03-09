@@ -372,8 +372,6 @@ function base_path() {
 }
 
 
-
-
 // Función para saber las rutas homólogas a la ruta de origen en el resto de idiomas. Uso: ideal para los href en el selector de idioma de elementos comunes a todas las páginas
 function getRutasEquivalentesPorIndice(string $url, array $arrayRutasGet): array
 {
