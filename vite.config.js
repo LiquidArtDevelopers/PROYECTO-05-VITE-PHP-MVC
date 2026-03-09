@@ -19,6 +19,12 @@ const entrypoints = [
   'src/js/zonaAdmin.js',
 ];
 
+function normalizeServedScssPublicAssetUrls(source) {
+  return source
+    .replace(/\.\.\/img\//g, '/assets/img/')
+    .replace(/\.\.\/fonts\//g, '/assets/fonts/');
+}
+
 export default defineConfig(({ command }) => {
   // "serve" cuando hacemos `vite` (dev) y "build" cuando hacemos `vite build`.
   const isDev = command === 'serve';
@@ -30,6 +36,26 @@ export default defineConfig(({ command }) => {
     // Mantenemos /public disponible en dev para servir imÃ¡genes y fuentes.
     // Forzamos recarga completa cuando cambian archivos PHP (no hay HMR en PHP).
     plugins: [
+      {
+        name: 'rewrite-served-scss-public-asset-urls',
+        apply: 'serve',
+        enforce: 'post',
+        transform(source, id) {
+          if (!id.endsWith('.scss') || !source.includes('__vite__css')) {
+            return null;
+          }
+
+          const normalizedSource = normalizeServedScssPublicAssetUrls(source);
+          if (normalizedSource === source) {
+            return null;
+          }
+
+          return {
+            code: normalizedSource,
+            map: null,
+          };
+        },
+      },
       {
         name: 'clean-public-assets',
         apply: 'build',
