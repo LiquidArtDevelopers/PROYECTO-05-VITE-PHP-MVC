@@ -279,6 +279,271 @@
                 <a href="" class="boton">CTA</a>
 
             </article>
+
+            <!-- artículo 09 -->
+            <article class="art09">
+
+                <h3>Artículo 09</h3>
+
+                <div>
+
+                    <div class="contenedor-lista">
+                    <h4>Atención personalizada</h4>
+                    <ul>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="contenedor-lista">
+                    <h4>Los mejores ingredientes</h4>
+                    <ul>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/checkmark-circle.svg" alt="" title="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                    </ul>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Artículo 10-->
+            <article class="art10">
+                <h3>Artículo 10</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum libero saepe voluptatem unde sequi quas corporis quibusdam debitis odit ea, asperiores facere ullam ab dolores perspiciatis sapiente aliquid officia nisi corrupti voluptatibus provident laboriosam similique deleniti. Consequuntur, explicabo id amet corrupti at reiciendis, ullam eaque asperiores est officiis sint?</p>
+                <div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/50x50" alt="">
+                    <h4>Encabezado h4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt totam excepturi officia ipsam aut illo recusandae placeat, neque ut inventore.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artículo 11 -->
+            <article class="art11">
+                <div>
+                    <img src="https://dummyimage.com/900x900" alt="">
+                </div>
+
+                <div>
+                    <img src="https://dummyimage.com/900x900" alt="">
+                </div>
+
+                <div>
+                    <img src="https://dummyimage.com/900x900" alt="">
+                </div>
+
+                <div>
+                    <img src="https://dummyimage.com/900x900" alt="">
+                </div>
+
+                <div>
+                    <img src="https://dummyimage.com/900x900" alt="">
+                </div>
+
+                <div>
+                    <img src="https://dummyimage.com/900x900" alt="">
+                </div>
+
+                <div>
+                    <img src="https://dummyimage.com/900x900" alt="">
+                </div>
+
+                <div>
+                    <img src="https://dummyimage.com/900x900" alt="">
+                </div>
+
+            </article>
+
+            <!-- Artículo 12 -->
+            <article class="art12">
+                <h3>Artículo 12</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas accusamus tenetur et fuga illum corporis doloribus. Illum, autem distinctio sed consectetur illo placeat nobis esse perferendis molestiae, explicabo voluptates quod ducimus tenetur voluptatum? Minus illo eveniet aliquam exercitationem libero repellat aliquid</p>
+                <div>
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/300x300" alt="" title="">
+                    <div>
+                        <h4>Encabezado h4</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, iure!</p>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    </div>
+
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/300x300" alt="" title="">
+                    <div>
+                        <h4>Encabezado h4</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, iure! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, aliquid?</p>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    </div>
+
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/300x300" alt="" title="">
+                    <div>
+                        <h4>Encabezado h4</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, iure!</p>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    </div>
+
+                    <div class="ficha">
+                    <img src="https://dummyimage.com/300x300" alt="" title="">
+                    <div>
+                        <h4>Encabezado h4</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    </div>
+                </div>
+            </article>
+            
+
+            <!-- Artículo 13-->
+            <article class="art13">
+                <img
+                    alt="" 
+                    title=""
+                    srcset="
+                    https://dummyimage.com/1500x900 1500w,
+                    https://dummyimage.com/1100x700 1100w
+                    "
+                    sizes="
+                    (max-width:800px) 900px,
+                    1500px
+                    "
+                    src="https://dummyimage.com/1200x900"          
+                >
+                <div>
+                    <h3>Artículo 13</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et harum exercitationem nihil quam repellat itaque maiores inventore, nulla earum cumque, optio quibusdam repudiandae nesciunt aliquam? Nisi nam asperiores optio omnis eaque blanditiis totam iusto, magnam enim tenetur soluta quo nemo? Libero voluptatum ullam labore doloribus eius veritatis corrupti in.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam quam delectus error quis nihil fugiat cupiditate officiis esse, dicta praesentium illo ducimus. Dolorum adipisci, nesciunt expedita non officia ratione, saepe soluta nihil eius odit neque eaque vitae illo deserunt.</p>
+                    <a href="#" class="boton">CTA</a>
+                </div>
+            </article>
+
+            <!-- Artículo 13 invertido -->
+            <article class="art13 upsidedown">
+                <img
+                    alt="" 
+                    title=""
+                    srcset="
+                    https://dummyimage.com/1500x900 1500w,
+                    https://dummyimage.com/1100x700 1100w
+                    "
+                    sizes="
+                    (max-width:800px) 900px,
+                    1500px
+                    "
+                    src="https://dummyimage.com/1200x900"          
+                >
+                <div>
+                    <h3>Articulo 13 invertido (class upsidedown)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et harum exercitationem nihil quam repellat itaque maiores inventore, nulla earum cumque, optio quibusdam repudiandae nesciunt aliquam? Nisi nam asperiores optio omnis eaque blanditiis totam iusto, magnam enim tenetur soluta quo nemo? Libero voluptatum ullam labore doloribus eius veritatis corrupti in.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam quam delectus error quis nihil fugiat cupiditate officiis esse, dicta praesentium illo ducimus. Dolorum adipisci, nesciunt expedita non officia ratione, saepe soluta nihil eius odit neque eaque vitae illo deserunt.</p>
+                    <a href="#" class="boton">CTA</a>
+                </div>
+            </article>
+
+            <!-- Artículo 13 -->
+            <article class="art13">
+                <img
+                    alt="" 
+                    title=""
+                    srcset="
+                    https://dummyimage.com/1500x900 1500w,
+                    https://dummyimage.com/1100x700 1100w
+                    "
+                    sizes="
+                    (max-width:800px) 900px,
+                    1500px
+                    "
+                    src="https://dummyimage.com/1200x900"          
+                >
+                <div>
+                    <h3>Artículo 13</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et harum exercitationem nihil quam repellat itaque maiores inventore, nulla earum cumque, optio quibusdam repudiandae nesciunt aliquam? Nisi nam asperiores optio omnis eaque blanditiis totam iusto, magnam enim tenetur soluta quo nemo? Libero voluptatum ullam labore doloribus eius veritatis corrupti in.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam quam delectus error quis nihil fugiat cupiditate officiis esse, dicta praesentium illo ducimus. Dolorum adipisci, nesciunt expedita non officia ratione, saepe soluta nihil eius odit neque eaque vitae illo deserunt.</p>
+                    <a href="#" class="boton">CTA</a>
+                </div>
+            </article>
           
 
             <!-- artForm -->
