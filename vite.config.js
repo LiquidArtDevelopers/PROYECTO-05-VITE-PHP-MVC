@@ -59,14 +59,27 @@ export default defineConfig(({ command }) => {
       {
         name: 'clean-public-assets',
         apply: 'build',
+        configResolved(config) {
+          this.projectRoot = config.root;
+        },
         buildStart() {
+          const root = this.projectRoot || process.cwd();
           const folders = ['js', 'css'].map((folder) =>
-            resolve(__dirname, 'public/assets', folder),
+            resolve(root, 'public/assets', folder),
           );
 
-          folders.forEach((folder) => {
-            fs.rmSync(folder, { recursive: true, force: true });
-            fs.mkdirSync(folder, { recursive: true });
+          folders.forEach((folderPath) => {
+            fs.mkdirSync(folderPath, { recursive: true });
+            const entries = fs.readdirSync(folderPath);
+            entries.forEach((entryName) => {
+              const targetPath = resolve(folderPath, entryName);
+              const stats = fs.lstatSync(targetPath);
+              if (stats.isDirectory()) {
+                fs.rmSync(targetPath, { recursive: true, force: true });
+              } else {
+                fs.unlinkSync(targetPath);
+              }
+            });
           });
         },
       },
