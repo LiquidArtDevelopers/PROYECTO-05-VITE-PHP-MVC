@@ -92,12 +92,17 @@ function mensaje_error_logup($ruta, $error, $lang){
 $anio=date('Y');
 
 
-// ----------------------------------------
-// ----------------------------------------
-
-
 // MOSTRASR O NO ERRORES PHP, EN PRODUCCIÓN ESTO DEBERÍA ESTAR COMO 0, UNA VEZ SEPAMOS QUE TODO ESTÁ OK
 ini_set('display_errors', $_ENV['DISPLAY_ERRORS']);
+
+
+
+
+// ----------------------------------------
+// ----------------------------------------
+
+
+
 
 // Obtiene la ruta física de /public de forma robusta en local y producción.
 function vite_public_root() {
